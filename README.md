@@ -37,7 +37,10 @@ This process ensures that snaps are sent to all designated friends, preserving t
 
 __Fig.4. Snap is sent and streak is maintained__
 
-Fig.5. Flowchart for Implementation
+![Alt text](/Images/Download.png)
+
+__Fig.5. Flowchart for Implementation__
+
 ## Results
 ##  Analysis of Automation Process
 The automation process for maintaining Snapstreaks using Selenium and Python demonstrated both technical feasibility and practical effectiveness. The script successfully emulated user behavior by navigating the Snapchat web interface, capturing snaps, and sending them to designated friends to maintain streaks. The implementation required careful consideration of web elements, timing, and error handling to ensure reliability. Significant technical challenges include dealing with dynamic content and potential changes in Snapchat's web interface. The utilization of XPath expressions and WebDriverWait enhanced the script's ability to locate and interact with elements despite these changes. However, the process was not entirely immune to occasional failures due to unexpected interface updates or network issues.The script's design included a scheduling mechanism to run the automation twice daily, ensuring continuous maintenance of Snapstreaks. This frequency was sufficient to meet Snapchat's requirement of exchanging snaps within a 24-hour period. The automation significantly reduced the manual effort required, particularly for users managing multiple Snapstreaks, and ensured streak continuity with minimal user intervention.
