@@ -37,7 +37,7 @@ This process ensures that snaps are sent to all designated friends, preserving t
 
 __Fig.4. Snap is sent and streak is maintained__
 
-![Alt text](/Images/Download.png)
+![Alt text](/Images/diagram.png)
 
 __Fig.5. Flowchart for Implementation__
 
