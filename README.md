@@ -18,17 +18,24 @@ By fulfilling these goals, this research hopes to offer insightful information a
 Setting up the environment for implementing the Snapstreak automation solution involves several key steps. Firstly, ensure that Python is installed on the system, preferably with a version compatible with the chosen Selenium package. Next, install the necessary dependencies, including Selenium and any additional libraries required for interacting with the Snapchat web interface. Additionally, download and configure the appropriate web driver for Selenium (ChromeDriver for Google Chrome) to interface with the chosen web browser. This may involve downloading the driver executable and placing it in the system PATH for accessibility. Finally, consider any platform-specific configurations or security settings that may impact the execution of the automation script, such as browser settings or firewall permissions. By carefully setting up the development environment, researchers can proceed with implementing the automation solution effectively.
 ## Designing the Automation Script
 The automation script is meticulously designed to execute a sequence of actions emulating user behavior on the Snapchat web interface, ensuring the continuous maintenance of Snapstreaks. The script begins by launching Google Chrome with remote debugging enabled, establishing communication with the browser instance. This facilitates interaction with the Snapchat web interface. Once the browser is launched, the script initializes the WebDriver with appropriate settings, including the path to the ChromeDriver executable. This ensures seamless interaction between the script and the browser environment.
+![Alt text](/Images/one.png)
+__Fig.1 Snapchat Web is with the help of the terminal__
 
-Fig.1 Snapchat Web is with the help of the terminal
 Upon initialization, the script navigates to the Snapchat website using the get() method. The camera button, essential for capturing snaps, is located on the interface using an XPath expression. Utilizing the WebDriverWait function, the script waits for the camera button to be clickable, enhancing reliability. Upon locating the camera button, a click event is triggered, accessing the camera interface. A short sleep duration is incorporated to allow time for the interface to load effectively, ensuring the subsequent actions are performed accurately.
+![Alt text](/Images/Two.png)
+__Fig.2 A photo is clicked where only the dark screen is seen__
 
-Fig.2 A photo is clicked where only the dark screen is seen
 Following the navigation to the camera interface, the script proceeds to locate the button for sending snaps. This button is crucial for initiating the process of maintaining Snapstreaks. Once located, the send button is clicked to proceed with sending snaps.After sending the snap, the script locates the shortcut button for accessing streaks on the Snapchat interface. This button is pivotal for initiating the process of maintaining Snap Streaks with friends. Upon locating the streaks button, a click event is triggered to access the streaks interface.Next, the script iterates through the list of friends with whom Snap Streaks are maintained. For each friend, the script locates and clicks the corresponding selection button, indicating that the snap is to be sent to that friend.
 
-Fig.3 Friends are selected to whom snaps need to be sent
+![Alt text](/Images/three.png)
+
+__Fig.3 Friends are selected to whom snaps need to be sent__
+
 This process ensures that snaps are sent to all designated friends, preserving the continuity of Snapstreaks. Finally, it's worth noting that the script is designed to execute twice a day to ensure consistent maintenance of Snapstreaks. This is implemented using a scheduling mechanism in Python, like schedule module, which enables users to specify recurring tasks at specified intervals. Integrating such a mechanism into the script ensures that Snap Streaks are maintained regularly, contributing to sustained user involvement on the Snapchat platform.
 
-Fig.4. Snap is sent and streak is maintained
+![Alt text](/Images/four.png)
+
+__Fig.4. Snap is sent and streak is maintained__
 
 Fig.5. Flowchart for Implementation
 ## Results
